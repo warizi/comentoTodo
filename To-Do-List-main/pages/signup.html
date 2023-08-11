@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/signup.css">
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sign Up</h1>
+            <span>2023.08.07(월)</span>
+        </header>
+        <main>
+            <form action="/main">
+                <label for="id">
+                    <div class="input_container">
+                        <p>ID:</p>
+                        <input class="signup-input" id="id" type="text" placeholder="아이디">
+                    </div>
+                    <p class="format_guide">4자 이상 16자리 이하</p>
+                </label>
+                <label for="password">
+                    <div class="input_container">
+                        <p>PW:</p>
+                        <input class="signup-input" id="password" type="password" placeholder="비밀번호">
+                    </div>
+                    <p class="format_guide">4자 이상 16자리 이하</p>
+                </label>
+                <label for="password_confirm">
+                    <div class="input_container">
+                        <p>ConfirmPassword</p>
+                        <input class="signup-input" id="password_confirm" type="password" placeholder="비밀번호">
+                    </div>
+                    <p class="format_guide">4자 이상 16자리 이하</p>
+                </label>
+                <button class="signup_btn">Sign up</button>
+            </form>
+            <a href="/index.html" class="back_btn">Back</a>
+        </main>
+    </div>
+    <script type="module" src="./script/signup.js"></script>
+</body>
+</html>

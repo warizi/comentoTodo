@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="편리하게 todo리스트를 관리합니다. to do 등록, to do 삭제, to do 체크, to do 강조를 통하여 간편하게 일정을 관리하세요.">
+    <meta property="og:title" content="To-Do-List">
+    <meta property="og:url" content="https://warizi.github.io/To-Do-List/">
+    <meta property="og:description" content="간단하게 To Do 리스트를 관리하세요!">
+    <meta property="og:image" content="../images/preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/todo.css">
+    <link rel="manifest" href="../manifest.json" />    
+    <script>navigator.serviceWorker.register("../service-worker.js")</script> 
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">To Do</h1>
+            <span id="today">2023.08.07(월)</span>
+        </header>
+        <main>
+            <div class="todo_input_container">
+                <form action="/">
+                    <input type="text" placeholder="할일 등록" class="todo_input">
+                    <button class="submit_todo">추가</button>
+                </form>
+            </div>
+            <ul id="todo_list_container">
+            </ul>
+        </main>
+        <section class="footer">
+            <div class="tool" id="write">
+            </div>
+            <div class="tool" id="highlight">
+            </div>
+            <div class="tool" id="delete">
+            </div>
+        </section>
+        <div class="input_back_drop blind"></div>
+    </div>
+    <script type="module" src="../script/todo.js"></script>
+</body>
+</html>

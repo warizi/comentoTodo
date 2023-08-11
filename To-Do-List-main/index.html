@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>To-Do-List</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To Do</h1>
+            <span>2023.08.07(월)</span>
+        </header>
+        <main>
+            <form action="/pages/todo.html">
+                <label for="id">
+                    <div class="input_container">
+                        <span>ID:</span>
+                        <input class="signin-input" id="id" type="text" placeholder="아이디">
+                    </div>
+                    <p class="format_guide">4자 이상 16자리 이하</p>
+                </label>
+                <label for="password">
+                    <div class="input_container">
+                        <span>PW:</span>
+                        <input class="signin-input" id="password" type="password" placeholder="비밀번호">
+                    </div>
+                    <p class="format_guide">4자 이상 16자리 이하</p>
+                </label>
+                <button class="signin_btn">Sign in</button>
+            </form>
+            <a href="/pages/signup.html" class="signup_btn">Sign up</a>
+        </main>
+    </div>
+    <script type="module" src="./script/signin.js"></script>
+</body>
+</html>
